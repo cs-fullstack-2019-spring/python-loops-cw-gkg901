@@ -28,14 +28,14 @@ def ex3():
 
 def ex4():
     while True:
-        pass1 = input("enter password. enter 'q' to quit")
-        pass2 = input("confirm password. enter 'q' to quit")
-        if pass1 == 'q':
+        pass1 = input("enter password")
+        pass2 = input("confirm password. enter 'q' to quit.")
+        if pass1 == pass2:
             break
-        elif pass2 == "q":
+
+        elif pass2 or pass1 == "q":
             break
-    if pass1 == pass2:
-        break
+
 
 
 
