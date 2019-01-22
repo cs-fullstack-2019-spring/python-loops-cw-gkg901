@@ -4,7 +4,8 @@ def main():
     # ex1()
     # ex2()
     # ex3()
-    ex4()
+    # ex4()
+    bonus()
 
 def ex1():
     for nums in range(-20,51,1):
@@ -33,11 +34,27 @@ def ex4():
         if pass1 == pass2:
             break
 
-        elif pass2 or pass1 == "q":
+        elif pass2 == "q" or pass1 == "q":
             break
 
 
+def bonus():
+    endValue = int(input("enter a number"))
+    for i in range(1,endValue+1):
+        print(i)
+        if i % 3 == 0 and i % 5 == 0:
+            print("FIZZBUZZ " + str(i))
 
+        elif i % 3 == 0:
+            print("FIZZ " + str(i))
+
+        elif i % 5 == 0:
+            print("BUZZ " + str(i))
+
+
+
+        else:
+            print(endValue)
 
 
 
